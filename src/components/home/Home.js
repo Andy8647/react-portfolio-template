@@ -7,14 +7,7 @@ import SocialIcon from './SocialIcon';
 import { Box } from '@mui/material';
 import { info } from '../../assets/info/Info';
 
-const blurGlassStyle = {
-  borderRadius: '1rem',
-  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-  backdropFilter: 'blur(8px)',
-  padding: '1rem 2rem',
-};
-
-export default function Home() {
+export default function Home({ darkMode }) {
   return (
     <Box
       component={'main'}
@@ -37,7 +30,19 @@ export default function Home() {
         mb={{ xs: '1rem', sm: 0 }}
         mr={{ xs: 0, md: '2rem' }}
       />
-      <Box style={blurGlassStyle}>
+      <Box
+        style={{
+          borderRadius: '1rem',
+          background: darkMode ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)',
+          boxShadow: darkMode
+            ? '0 0 10px 0 rgba(0, 0, 0, 0.5)'
+            : '0 0 10px 0 rgba(255, 255, 255, 0.5)',
+          backdropFilter: 'blur(16px)',
+          WebkitBackdropFilter: 'blur(16px)',
+          padding: '1rem 2rem',
+          transition: 'all 0.5s ease',
+        }}
+      >
         <h1>
           Hi, I'm{' '}
           <span
