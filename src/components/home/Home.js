@@ -1,15 +1,20 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import me from '../../img/self.png';
+import me from '../../assets/img/self.png';
 import classNames from 'classnames';
 import EmojiBullet from './EmojiBullet';
 import SocialIcon from './SocialIcon';
 import { Box } from '@mui/material';
-import { info } from '../../info/Info';
+import { info } from '../../assets/info/Info';
+
+const blurGlassStyle = {
+  borderRadius: '1rem',
+  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+  backdropFilter: 'blur(8px)',
+  padding: '1rem 2rem',
+};
 
 export default function Home() {
-  // todo: add particles.js background
-
   return (
     <Box
       component={'main'}
@@ -32,7 +37,7 @@ export default function Home() {
         mb={{ xs: '1rem', sm: 0 }}
         mr={{ xs: 0, md: '2rem' }}
       />
-      <Box>
+      <Box style={blurGlassStyle}>
         <h1>
           Hi, I'm{' '}
           <span

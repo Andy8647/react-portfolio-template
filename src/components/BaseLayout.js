@@ -6,15 +6,17 @@ import About from './about/About';
 import Portfolio from './portfolio/Portfolio';
 import { Route, Routes } from 'react-router-dom';
 import { Box, Grid } from '@mui/material';
+import ParticlesBg from './particles/ParticlesBg';
+import { logGa } from '../utils/log';
 
 export default function BaseLayout() {
   let [darkMode, setDarkMode] = useState(false);
 
   function handleToggleDarkMode() {
     let oppositeOfCurrentDarkMode = !darkMode;
-    console.log(oppositeOfCurrentDarkMode);
     localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
     setDarkMode(oppositeOfCurrentDarkMode);
+    logGa('dark_mode_toggle', oppositeOfCurrentDarkMode ? 'dark' : 'light');
   }
 
   useEffect(() => {
@@ -29,6 +31,7 @@ export default function BaseLayout() {
 
   return (
     <Box className={darkMode ? Style.dark : Style.light}>
+      <ParticlesBg darkMode={darkMode.valueOf()} />
       <Grid
         container
         display={'flex'}
@@ -59,6 +62,10 @@ export default function BaseLayout() {
             <p>
               template created with &hearts; by{' '}
               <a href={'https://paytonpierce.dev'}>Payton Pierce</a>
+            </p>
+            <p>
+              colors and particle effects created with &hearts; by{' '}
+              <a href={'https://andy8647.com'}>Andy Luo</a>
             </p>
             <p>&copy; 2023</p>
           </Box>
