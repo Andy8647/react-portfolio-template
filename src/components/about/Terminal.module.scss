@@ -1,4 +1,4 @@
-@import "../../variables.modules";
+@import '../../variables.modules';
 
 i {
   padding-left: 0.5rem;
@@ -17,12 +17,14 @@ i {
 }
 
 .terminal {
-  p, li {
+  p,
+  li {
     margin: 1rem 0;
     color: $white;
   }
 
-  a, a:visited {
+  a,
+  a:visited {
     animation: changeColors 3s infinite;
     font-weight: bold;
   }

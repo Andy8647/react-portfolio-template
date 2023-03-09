@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-@import "./variables.modules";
-
+@import './variables.modules';
 
 body {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 1.5vh;
-    width: 100%;
-    height: 100%;
-    color: $dark;
-    background-color: $white;
-    box-sizing: border-box;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1.5vh;
+  width: 100%;
+  height: 100%;
+  color: $dark;
+  background-color: $white;
+  box-sizing: border-box;
 }
 
 li {
-    color: $dark;
+  color: $dark;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a,
@@ -27,13 +26,13 @@ a:link,
 a:hover,
 a:visited,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
