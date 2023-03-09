@@ -5,7 +5,12 @@ function EmojiBullet(props) {
   const { emoji, text } = props;
 
   return (
-    <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} style={{ cursor: 'default' }}>
+    <Box
+      component={'li'}
+      fontSize={'1rem'}
+      lineHeight={1.5}
+      style={{ cursor: 'default', display: 'flex', alignItems: 'center' }}
+    >
       <Box
         component={'span'}
         aria-label="cheese"

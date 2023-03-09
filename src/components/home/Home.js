@@ -35,12 +35,12 @@ export default function Home({ darkMode }) {
           borderRadius: '1rem',
           background: darkMode ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)',
           boxShadow: darkMode
-            ? '0 0 10px 0 rgba(0, 0, 0, 0.5)'
-            : '0 0 10px 0 rgba(255, 255, 255, 0.5)',
-          backdropFilter: 'blur(16px)',
-          WebkitBackdropFilter: 'blur(16px)',
+            ? '0 0 10px 0 rgba(0, 0, 0, 0.2)'
+            : '0 0 10px 0 rgba(255, 255, 255, 0.2)',
+          backdropFilter: 'blur(8px)',
+          WebkitBackdropFilter: 'blur(8px)',
           padding: '1rem 2rem',
-          transition: 'all 0.5s ease',
+          transition: 'all 0.3s ease',
         }}
       >
         <h1>
