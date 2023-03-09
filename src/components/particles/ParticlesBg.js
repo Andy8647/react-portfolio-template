@@ -22,7 +22,7 @@ const ParticlesBg = ({ darkMode }) => {
     setBgColor(background(darkMode));
     setParticleColor(particle(darkMode));
     setLinksColor(links(darkMode));
-  }, [darkMode]);
+  }, [darkMode, background, links, particle]);
 
   return (
     <Particles
