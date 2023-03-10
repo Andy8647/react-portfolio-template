@@ -21,12 +21,20 @@ export default function BaseLayout() {
 
   useEffect(() => {
     let detectedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+    const osDarkModeQuery = window.matchMedia
+      ? window.matchMedia('(prefers-color-scheme: dark)')
+      : null;
 
     if (detectedDarkMode) {
       setDarkMode(detectedDarkMode);
     } else {
-      localStorage.setItem('darkMode', 'false');
+      localStorage.setItem('darkMode', `${osDarkModeQuery.matches}`);
     }
+
+    const updateDarkMode = (e) => {
+      setDarkMode(e.matches);
+    };
+    osDarkModeQuery.addEventListener('change', updateDarkMode);
   }, []);
 
   return (
