@@ -74,7 +74,7 @@ export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 For the particles background color, you can change the colors in `/src/assets/colors/particlesBg.js`
 These are the colors I picked from iTerm2's color schemes, but you can use whatever you like.
 
-```
+```js
 export const particleBgColors = () => {
   // for dark use atom one dark, for light use CLRS
   const background = (darkMode = false) => (darkMode ? '#0d2538' : '#DCD6C8');
