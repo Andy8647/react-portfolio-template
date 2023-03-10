@@ -28,13 +28,16 @@ export default function BaseLayout() {
     if (detectedDarkMode) {
       setDarkMode(detectedDarkMode);
     } else {
-      localStorage.setItem('darkMode', `${osDarkModeQuery.matches}`);
+      localStorage.setItem('darkMode', `${!!osDarkModeQuery?.matches}`);
     }
 
     const updateDarkMode = (e) => {
       setDarkMode(e.matches);
     };
-    osDarkModeQuery.addEventListener('change', updateDarkMode);
+
+    if (osDarkModeQuery) {
+      osDarkModeQuery.addEventListener('change', updateDarkMode);
+    }
   }, []);
 
   return (
