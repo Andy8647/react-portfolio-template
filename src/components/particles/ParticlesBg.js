@@ -38,10 +38,10 @@ const ParticlesBg = ({ darkMode }) => {
         fpsLimit: 144,
         fullScreen: {
           enable: true,
-          zIndex: -100,
+          zIndex: -1,
         },
         interactivity: {
-          detectsOn: 'canvas',
+          detectsOn: 'window',
           events: {
             onClick: {
               enable: true,
@@ -55,16 +55,16 @@ const ParticlesBg = ({ darkMode }) => {
           },
           modes: {
             bubble: {
-              distance: 400,
+              distance: 40,
               duration: 2,
-              opacity: 0.8,
+              opacity: 0.4,
               size: 40,
             },
             push: {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 150,
               duration: 0.4,
             },
           },
