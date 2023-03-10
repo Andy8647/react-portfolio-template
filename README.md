@@ -104,6 +104,7 @@ const firebaseConfig = {
 ### 5. Social Media Presence meta tags
 - edit `/public/index.html`
 - for meta tags, you can use the generator [here](https://metatags.io/)
+- [twitter example](https://twitter.com/Andy8647L/status/1633956293986664448)
 
 ```html
 <!-- Social Media Previews -->
@@ -126,6 +127,7 @@ const firebaseConfig = {
     <meta property="twitter:description" content="Full Stack Developer and Freelance Photographer based in Toronto, passionate about building web applications, learning new technologies, traveling and exploring new places.">
     <meta property="twitter:image" content="https://andy8647.com/website.jpg">
 ```
+
 
 ### 6. Deployment
 
