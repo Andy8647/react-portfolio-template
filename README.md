@@ -139,6 +139,12 @@ const firebaseConfig = {
 
 I recommend using [Netlify](https://www.netlify.com/) for deployment. It's free and easy to use. You can follow the instructions [here](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git) to deploy your site.
 
+P.S. If you are using Netlify, to resolved the bug from `react-router-dom`, you need to add a `_redirects` file in the `public` folder and add the following code:
+
+```
+/*    /index.html   200
+```
+
 ---
 
 And you're done!
