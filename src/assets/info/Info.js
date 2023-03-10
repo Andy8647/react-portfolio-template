@@ -53,6 +53,8 @@ export const info = {
   ],
   bio: "Hello! I'm Gancheng (Andy) Luo. I'm a Full Stack Developer. I studied CompSci at UofT, I enjoy building web applications and learning new technologies. I'm currently working at commonsku as a Full Stack Developer. I'm also a freelance photographer. I love to travel and explore new places. I'm currently based in Toronto, Canada.",
   skills: {
+    // you dont havew to strictly follow the 'languages', 'frameworks', 'databases', 'cloudServices', and 'tools' categories. You can add your own if you'd like.
+    // but the structure should be the same, an array of strings and the key should be one word, no spaces.
     languages: ['TypeScript', 'JavaScript', 'Java', 'PHP', 'Python', 'HTML/CSS'],
     frameworks: [
       'React',
@@ -117,6 +119,7 @@ export const info = {
   ],
   portfolio: [
     // This is where your portfolio projects will be detailed
+    //   for the null ones, the button will not show up
     {
       title: 'CryptoGoGo - Online Cryptocurrency Community and Trading platform',
       live: null, //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
