@@ -127,6 +127,10 @@ const firebaseConfig = {
     <meta property="twitter:image" content="https://andy8647.com/website.jpg">
 ```
 
+### 6. Deployment
+
+I recommend using [Netlify](https://www.netlify.com/) for deployment. It's free and easy to use. You can follow the instructions [here](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git) to deploy your site.
+
 ---
 
 And you're done!
