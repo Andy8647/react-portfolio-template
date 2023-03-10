@@ -15,6 +15,10 @@ I just added particlets background, OS dark mode detection and watch, Google Ana
 
 🌑 Dark Mode Toggler and OS dark mode detection
 
+📱Social Media Presence meta tags
+
+📊 Google Analytics
+
 📖 Multiple Pages (React Router)
 
 📱 Fully Responsive
