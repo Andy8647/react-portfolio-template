@@ -75,9 +75,8 @@ export default function BaseLayout() {
               <a href={'https://paytonpierce.dev'}>Payton Pierce</a>
             </p>
             <p>
-              colors and particle effects implemented with &hearts; by{' '}
-              <a href={'https://andy8647.com'}>Andy Luo </a>, designed with &hearts; by{' '}
-              <a href={'https://ingrid-0126.netlify.app'}>Ingrid Fei</a>
+              enhence implemented with &hearts; by <a href={'https://andy8647.com'}>Andy Luo </a>,
+              redesigned with &hearts; by <a href={'https://ingrid0126.com'}>Ingrid Fei</a>
             </p>
             <p>&copy; 2023</p>
           </Box>

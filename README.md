@@ -8,7 +8,7 @@
 
 Attention: This is based on paytonjewell's [react-portfolio-template](https://github.com/paytonjewell/ReactPortfolioTemplate)
 I just added particlets background, OS dark mode detection and watch, Google Analytics.
-Elements redesigned by [Ingrid Fei](https://ingrid-0126.netlify.app)
+Elements redesigned by [Ingrid Fei](https://ingrid0126.com)
 
 
 ### Original README:
