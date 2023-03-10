@@ -20,7 +20,7 @@ export default function Home({ darkMode }) {
       <Box
         className={classNames(Style.avatar, Style.shadowed)}
         alt={'image of developer'}
-        style={{ background: info.gradient }}
+        style={{ background: info.gradient, objectFit: 'cover' }}
         component={'img'}
         src={me}
         width={{ xs: '35vh', md: '40vh' }}
