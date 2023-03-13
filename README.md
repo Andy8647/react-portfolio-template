@@ -4,7 +4,7 @@
 
 ![screenshot](https://andy8647.com/website.jpg)
 
-[View Live Template](https://andy8647.com/)
+[View Live Demo](https://andy8647.com/)
 
 Attention: This is based on paytonjewell's [react-portfolio-template](https://github.com/paytonjewell/ReactPortfolioTemplate)
 I just added particlets background, OS dark mode detection and watch, Google Analytics.
